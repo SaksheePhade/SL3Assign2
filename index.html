@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navstyles.css">
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+            body {
+                margin:0;
+                background: #f2f2f2;
+                font-family: 'Open Sans', sans-serif;
+                /*background-image:  url(Images/white.png);
+                background-repeat: no-repeat;
+                background-size: cover;#f2f2f2*/
+            }
+
+            .title {
+                height: 30%;
+                padding-top: 5%;
+                padding-left: 45%;
+                color: #00B4CC;
+            }
+
+            .search {
+                padding-top: 1%;
+                padding-left: 35%;
+                padding-right: 35%;
+                position: relative;
+                display: flex;
+            }
+
+            .search input {
+                width: 100%;
+                border: none;
+                border-right: none;
+                padding: 5px;
+                height: 20px;
+                border-radius: 20px 0 0 20px;
+                outline: none;
+                color: #9DBFAF;
+            }
+
+            .searchButton {
+                width: 35px;
+                height: 30px;
+                border: none;
+                background-color: white;
+                text-align: center;
+                color: #fff;
+                border-radius: 0 20px 20px 0;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+            .body-text {
+                background-color: white;
+                color: black;
+                opacity: 0.5;
+                margin-top: 3%;
+                margin-left: 10%;
+                margin-right: 10%;
+                border-radius: 20px;
+            }
+
+            .body-text img {
+                float: left;
+                margin-right: 15px;
+                height: 300px;
+                border-radius: 20px 0px 0px 20px;
+            }
+
+            .body-text p {
+                margin-top: 5px;
+                margin-right: 2px;
+            }
+
+            .body-text h3 {
+                color: rgb(33, 143, 110);
+            }
+
+        </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="index.html"><img height="40px" width="auto" id="logo" src="Images/logo1.png"></a>
+        <a id="navtext" href="index.html" class="active">Home</a>
+        <a id="navtext" href="jobs.html">Jobs</a>
+        <a id="navtext" href="reqruiters.html">Reqruiters</a>
+        <a id="navtext" href="statistics.html">News</a>
+        <a id="navtext" href="signup.html">Sign up</a>
+        <div class="dropdown">
+            <button id="navtext" class="dropbtn">Contact us</button>
+            <div class="dropdown-content">
+            <a href="mailto:sakshee1120@gmail.com">Email Us</a>
+            <a href="#">Moblie : 9999999999</a>
+            <a href="https://goo.gl/maps/YjN91hffncqvTg9r8">Our address</a>
+            </div>
+        </div> 
+    
+    </div>
+
+    <div class="title">
+        <h1 style="font-size: 40px;"><strong>JOBSPOT</strong></h1>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton">
+            <a href="jobs2.html"><i class="fa fa-search"></i></a>
+        </button>
+    </div>
+
+    <div class="body-text">
+        <p>
+            <img src="Images/laptop2.jpg">
+            <br>
+            <h3><em><strong>Job hunting just got easy!</strong></em></h3>
+            We here at JOBSPOT possess a repository of latest, exciting job offers. With the help of our sleek user interface, you will be able to find your fit in no time. You have the option to search for jobs by your designation, industry and even location.
+            Reqruiters, we have fresh talent ready fo you. Just post your vacancy with precise job description and expectation and you will find the person best for the job.
+            Go over to the companies section to find out which companies hire talent from our site. Also, we have a team of researchers who provide acute statistics adhering to the local and global market trends.
+            Job searchers, <a href="jobs.html">click here</a> or head to the 'Jobs' section on the navbar to explore.
+            Reqruiters, <a href="reqruiters.html">click here</a> or head to the 'Reqruiters' section on the navbar to post your job vacancy.
+            <br>
+            Happy Hunting!
+            <br><br>
+        </p>
+    </div>
+
+</body>
+</html>

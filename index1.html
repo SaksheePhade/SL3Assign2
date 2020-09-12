@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobspot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navstyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Coda Caption:800' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+            /*background-image: url(Images/white.png);
+            background-repeat: no-repeat;
+            background-size: cover;*/
+            background-color: #edf7f0;
+        }   
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+
+        .searchTerm {
+            width: 100%;
+            border: none;
+            border-right: none;
+            padding: 5px;
+            height: 20px;
+            border-radius: 20px 0px 0px 20px;
+            outline: none;
+            color: #9DBFAF;
+        }
+
+        .searchTerm:focus{
+            color: #00B4CC;
+        }
+
+        .searchButton {
+            width: 40px;
+            height: 30px;
+            border: none;
+            text-align: center;
+            color: #9DBFAF;
+            background-color: #ffffff;
+            border-radius: 0px 20px 20px 0px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /*Resize the wrap to see the search bar change!*/
+        .wrap{
+            width: 30%;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .heading {
+            margin-top: 10%;
+            margin-left: 41%;
+            position: absolute;
+        }
+
+        .heading h1{
+            color: #2595f7;
+            font-family: 'Coda Caption';
+            font-size: 55px;
+        }
+
+        .content1 {
+            position: absolute;
+            top: 47%;
+            left: 45%;
+        }
+
+        .content2 {
+            position: absolute;
+            top: 55%;
+            left: 25%;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="logo">
+        <img src="Images/logo1.png">
+    </div> 
+
+    <div class="topnav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="reqruiters.html">Reqruiters</a></li>
+            <li><a href="statistics.html">News</a></li>
+            <li><a href="signup.html">Signup</a></li>
+        </ul> 
+    </div>
+    
+    <div class="heading">
+        <h1>JOBSPOT</h1>
+    </div>
+
+    <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+    </div>
+
+    <div class="content1">
+        <h2 style="color: #08a66f;font-family: 'Allan';">Job searching just got easy!</h2>
+    </div>
+    <div class="content2">
+        <p> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            We here at JOBSPOT possess a repository<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            of latest, exciting job offers.
+            With the help of our sleek user interface,<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            you will be able to find your fit in no time.You have the option
+            to search for jobs by <br>&nbsp;&nbsp;&nbsp; your designation, industry and even location. Reqruiters, we have fresh talent ready fo you.
+            <br>Just post your vacancy with precise job description and expectation and you will find the person best for the job.
+        </p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <!--
+        <table cellspacing="5">
+            <tr>
+                <td></td>
+                <td colspan="2">  <font size="5" color="#de0d0d"><h2>JOBSPOT</h2></font> </td>
+                <td  bgcolor="#e0dfde"><em>May you be a job searcher or a reqruiter, job searching just got easy.</em></td>
+            </tr>
+        
+            <tr>
+                <td><img src="office.jpg" height="350" width="400"></td>
+                <td><img src="tie.jpg" height="350" width="400"></td>
+                <td><img src="comp.jpg" height="350" width="400"></td>
+                <td bgcolor="#e0dfde" colspan="2">
+                    <h2><font color="#de0d0d">Login/Signup</font></h2>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>User name: </td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Password: </td>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button>Login</button>
+                                    <button><a href="signup.html">Signup</a></button>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <p>
+                        We here at <font color="#de0d0d">JOBSPOT</font> possess a repository of latest, exciting job offers.
+                        With the help of our sleek user interface, you will be able to find your fit in no time. You have the option
+                        to search for jobs by your designation, industry and even location.<br> Reqruiters, we have fresh talent ready fo you. Just post 
+                        your vacancy with precise job description and expectation and you will find the person best for the job.
+                        <br>Go over to the companies section to find out which companies hire talent from our site. Also, we have a team of researchers who
+                        provide acute statistics adhering to the local and global market trends.
+                        <br>Job searchers, <a href="jobs.html">click here</a> or head to the 'Jobs' section on the navbar to explore.
+                        <br>Reqruiters, <a href="jobs.html">click here</a> or head to the 'Reqruiters' section on the navbar to post your job vacancy.<br>
+                        <em>Happy Hunting!</em>
+                    </p>
+                </td>
+                <td bgcolor="#e0dfde">
+                    <h2><font color="#de0d0d">Search for jobs by -</font></h2>
+                    <ul>
+                        <li><a href="jobs.html#loc">Location</a></li>
+                        <li><a href="jobs.html#ind">Industry</a></li>
+                        <li><a href="jobs.html#desgn">Designation</a></li>
+                    </ul>
+                </td>    
+            </tr>
+
+        </table>
+    </div> -->
+
+<!--green 439775-->
