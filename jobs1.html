@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navstyles.css">
+<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+            body {
+                margin:0;
+                background: #f2f2f2;
+                font-family: 'Open Sans', sans-serif;
+                /*background-image:  url(Images/white.png);
+                background-repeat: no-repeat;
+                background-size: cover;#f2f2f2*/
+            }
+
+            .jobsearch {
+                margin-top: 3%;
+                margin-left: 2%;
+                float: left;
+                width: 50%;
+                background-image: url("Images/comp.jpg");
+                background-size: cover;
+                border-radius: 20px;
+                opacity: 0.9;
+            }
+
+            .recommend {
+                float: left;
+                margin-left: 10%;
+            }
+
+            .jobsearch h2 {
+                color: rgb(33, 143, 110);
+                margin-left: 20%;
+            }
+
+            .recommend div {
+                padding: 5px;
+                border-radius: 2px;
+                opacity: 0.9;
+            }
+
+            .search {
+                margin-left: 2%;
+                padding-top: 25%;
+                padding-left: 25%;
+                padding-right: 25%;
+                padding-bottom: 25%;
+                position: relative;
+                display: flex;
+            }
+
+            .search input {
+                width: 100%;
+                border: none;
+                border-right: none;
+                padding: 5px;
+                height: 20px;
+                border-radius: 20px 0 0 20px;
+                outline: none;
+                color: #9DBFAF;
+            }
+
+            .searchButton {
+                width: 35px;
+                height: 30px;
+                border: none;
+                background-color: white;
+                text-align: center;
+                color: #fff;
+                border-radius: 0 20px 20px 0;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+          
+
+        </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="index.html"><img height="40px" width="auto" id="logo" src="Images/logo1.png"></a>
+        <a id="navtext" href="index.html" class="active">Home</a>
+        <a id="navtext" href="jobs.html">Jobs</a>
+        <a id="navtext" href="reqruiters.html">Reqruiters</a>
+        <a id="navtext" href="statistics.html">News</a>
+        <a id="navtext" href="signup.html">Sign up</a>
+        <div class="dropdown">
+            <button id="navtext" class="dropbtn">Contact us</button>
+            <div class="dropdown-content">
+            <a href="mailto:sakshee1120@gmail.com">Email Us</a>
+            <a href="#">Moblie : 9999999999</a>
+            <a href="https://goo.gl/maps/YjN91hffncqvTg9r8">Our address</a>
+            </div>
+        </div> 
+    
+    </div>
+
+    <div>
+        <h4 style="color: rgb(33, 143, 110); margin-left: 20px;"><em>The only way to do great work is love what you do.</em></h4>
+        <p style="margin-left: 200px;">- Steve Jobs</p>
+    </div>
+    
+    <div class="jobsearch">
+        <h2><strong>Browsing for jobs has never been easier!</strong></h2>
+        <div class="search">
+            <input type="text" placeholder="Search by city or profession">
+            <button type="submit" class="searchButton">
+                <a href="jobs2.html"><i class="fa fa-search"></i></a>
+            </button>
+        </div>             
+    </div>
+    <div class="recommend">
+        <h3 style="margin-left: 50px;">Job recommendations based on your previous searches</h3>
+        <div style="margin-top: 50px; background-color: white;">
+            Data scientist at <em>analytics vidhya</em><br>
+            Title: Senior data scientist<br>
+            Location: Delhi<br>
+            Description: Well versed with ACF, PACF, GARCH methodologies<br> to detect volatilities.<br>
+        </div>
+        <div style="margin-top: 10px;">
+            API developer at <em>PayTM</em><br>
+            Title: Junior developer<br>
+            Location: Pune<br>
+            Description: Use of backend technologies to<br> create scalable REST APIs.<br>
+        </div>
+        <div style="margin-top: 10px; background-color: white;">
+            Automobile engineer at <em>Tesla</em><br>
+            Title: Automobile engineer<br>
+            Location: San Fransisco<br>
+            Description: <br>
+        </div>
+    </div>
+
+</body>
+</html>
