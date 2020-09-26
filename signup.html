@@ -8,32 +8,41 @@
         #logo {
             border-radius: 50%;
         }
+
+        body {
+                margin:0;
+                background: #f2f2f2;
+                font-family: 'Open Sans', sans-serif;
+                /*background-image:  url(Images/white.png);
+                background-repeat: no-repeat;
+                background-size: cover;#f2f2f2*/
+            }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navstyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
 </head>
 
 <body style="margin-top: 0;margin-left: 0;margin-right: 0;">
-    <nav style="background-color: black; margin-top: 0;">
-        <img id="logo" src="logo.png" alt="logo">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="index.html"><font size="4" color="white">Home</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="jobs.html"><font size="4" color="white">Jobs</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="reqruiters.html"><font size="4" color="white">Reqruiters</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="statistics.html"><font size="4" color="white">News</font></a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="signup.html"><font size="4" color="white">Signup</font></a>
-    </nav>
+    <div class="topnav" id="myTopnav">
+
+        <a href="index.html"><img height="40px" width="auto" id="logo" src="Images/logo1.png"></a>
+        <a id="navtext" href="index.html" class="active">Home</a>
+        <a id="navtext" href="jobs1.html">Jobs</a>
+        <a id="navtext" href="req.html">Reqruiters</a>
+        <a id="navtext" href="statistics.html">News</a>
+        <a id="navtext" href="signup.html">Sign up</a>
+        <div class="dropdown">
+            <button id="navtext" class="dropbtn">Contact us</button>
+            <div class="dropdown-content">
+            <a href="mailto:sakshee1120@gmail.com">Email Us</a>
+            <a href="#">Moblie : 9999999999</a>
+            <a href="https://goo.gl/maps/YjN91hffncqvTg9r8">Our address</a>
+            </div>
+        </div> 
+    
+    </div>
+
     <br>
 
     <table>

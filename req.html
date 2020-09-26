@@ -17,6 +17,10 @@
                 background-size: cover;#f2f2f2*/
             }
 
+            .card img {
+                border-radius:  20px 20px 0px 0px;
+            }
+
             .card {
                 /* Add shadows to create the "card" effect */
                 width: 300px;
@@ -25,6 +29,7 @@
                 margin-top: 20px;
                 margin-left: 30px;
                 float: left;
+                border-radius: 20px;
             }
 
                 /* On mouse-over, add a deeper shadow */
@@ -39,10 +44,17 @@
 
             .card-container {
                 margin-left: 6%;
+                margin-bottom: 2%;
+            }
+
+            .search-container {
+                margin-top:20%;
+                padding-top: 10%;
+                margin-left: 40%;
             }
 
             .search input {
-                width: 100%;
+                width: 30%;
                 border: none;
                 border-right: none;
                 padding: 5px;
@@ -87,6 +99,8 @@
     
     </div>
 
+    <h1 style="margin-left: 40%; color: #00B4CC;">OUR TOP REQRUITERS</h1>
+
     <div class="card-container">
     <div class="card">
         <img src="Images/tesla.jfif" height="300px" width="300px" alt="Avatar">
@@ -97,7 +111,7 @@
     </div>
 
     <div class="card">
-        <img src="Images/tesla.jfif" height="300px" width="300px" alt="Avatar">
+        <img src="Images/ibm.png" height="300px" width="300px" alt="Avatar">
         <div class="container">
           <h4><b>John Doe</b></h4>
           <p>Architect & Engineer</p>
@@ -105,7 +119,7 @@
     </div>
 
     <div class="card">
-        <img src="Images/tesla.jfif" height="300px" width="300px" alt="Avatar">
+        <img src="Images/paytm.jfif" height="300px" width="300px" alt="Avatar">
         <div class="container">
           <h4><b>John Doe</b></h4>
           <p>Architect & Engineer</p>
@@ -113,7 +127,7 @@
     </div>
 
     <div class="card">
-        <img src="Images/tesla.jfif" height="300px" width="300px" alt="Avatar">
+        <img src="Images/microsoft.jfif" height="300px" width="300px" alt="Avatar">
         <div class="container">
           <h4><b>John Doe</b></h4>
           <p>Architect & Engineer</p>
@@ -122,11 +136,14 @@
 
     </div>
 
+    <div class="search-container">
+    <h2 style="color: rgb(33, 143, 110);"><em>Search for the right talent</em></h2>
     <div class="search">
         <input type="text" placeholder="What are you looking for?">
         <button type="submit" class="searchButton">
             <a href="jobs2.html"><i class="fa fa-search"></i></a>
         </button>
+    </div>
     </div>
 
 </body>
