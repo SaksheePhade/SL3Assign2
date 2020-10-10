@@ -56,14 +56,18 @@
 
     <script>
 
+           function validateName(name) {
+               return(/[a-zA-Z]/.test(name));
+           }
+
            function validateMail(email) {
-            return(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) );
+            return(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9-]+[.]{1}[a-zA-Z0-9-]+$/.test(email))
            }
 
            function validatePhone(phone) {
 
-                if(!( (/^\d{10}$/.test(phone)) || (/^\d{9}$/.test(phone)) || (/^\d{8}$/.test(phone)) )) {
-                    alert("Size of mobile number should be 9, 9 or 10!");
+                if(!( (/^\d{10}$/.test(phone)) || (/^\d{11}$/.test(phone)) )) {
+                    alert("Size of mobile number should be 10 or 11!");
                     return false;
                 }
                 else if(! (/^[789]/.test(phone)) ){
@@ -74,6 +78,10 @@
                     return true; 
            }
 
+           function validatePassword(password) {
+             return(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(password) );
+           }
+
            // Form validation 
            function validate() {
 
@@ -81,16 +89,16 @@
                  alert( "Please provide your first name!" );
                  return false;
               }
+              if( !validateName(document.myForm.fname.value) ) {
+                 alert( "First name invalid!" );
+                 return false;
+              }
               if( document.myForm.lname.value == "" ) {
                  alert( "Please provide your last name!" );
                  return false;
               }
-              if( document.myForm.password.value == "" ) {
-                 alert( "Please provide a password!" );
-                 return false;
-              }
-              if( document.myForm.mob.value == "" ) {
-                 alert( "Please provide your mobile number!" );
+              if( !validateName(document.myForm.lname.value) ) {
+                 alert( "Last name invalid!" );
                  return false;
               }
               if( document.myForm.email.value == "" ) {
@@ -99,6 +107,18 @@
               }
               if( !validateMail(document.myForm.email.value) ) {
                  alert( "Please provide correct Email!" );
+                 return false;
+              }
+              if( document.myForm.password.value == "" ) {
+                 alert( "Please provide a password!" );
+                 return false;
+              }
+              if( !validatePassword(document.myForm.password.value) ) {
+                 alert( "Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters");
+                 return false;
+              }
+              if( document.myForm.mob.value == "" ) {
+                 alert( "Please provide your mobile number!" );
                  return false;
               }
               if( !validatePhone(document.myForm.mob.value) ) {
@@ -142,10 +162,7 @@
             <label for="name">Email :</label>
             <input type="text" name="email"><br><br>
             <label for="name">Password :</label>
-            <input type="password" name="password"  
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-            required><br><br>
+            <input type="password" name="password"><br><br>
             <label for="mob">Mobile no :</label>
             <input type="text" name="mob"><br><br>
             <label for="address">Address :</label><br><br>
