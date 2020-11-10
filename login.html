@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobspot</title>
+    <style>
+        #logo {
+            border-radius: 50%;
+        }
+
+        body {
+                margin:0;
+                background: #f2f2f2;
+                font-family: 'Open Sans', sans-serif;
+            }
+        
+        .formstyle {
+            text-align: center;
+            background-color: white; 
+            opacity: 0.8; 
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 3px solid rgb(33, 143, 110);
+            padding: 3px;
+        }
+
+        textarea {
+            height: 100px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+        
+        #sub {
+            color: ivory;
+            font-size: large;
+            border: none;
+            background-color: #00B4CC;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navstyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    
+</head>
+
+<body style="margin-top: 0;margin-left: 0;margin-right: 0;">
+    <div class="topnav" id="myTopnav">
+
+        <a href="index.html"><img height="40px" width="auto" id="logo" src="Images/logo1.png"></a>
+        <a id="navtext" href="index.html" class="active">Home</a>
+        <a id="navtext" href="jobs1.html">Jobs</a>
+        <a id="navtext" href="req.html">Reqruiters</a>
+        <a id="navtext" href="statistics.html">News</a>
+        <a id="navtext" href="signup.html">Sign up</a>
+        <div class="dropdown">
+            <button id="navtext" class="dropbtn">Contact us</button>
+            <div class="dropdown-content">
+            <a href="mailto:sakshee1120@gmail.com">Email Us</a>
+            <a href="#">Moblie : 9999999999</a>
+            <a href="https://goo.gl/maps/YjN91hffncqvTg9r8">Our address</a>
+            </div>
+        </div> 
+    
+    </div>
+    <div style="text-align: center; color: #00B4CC">
+        <h1>Log into your account</h1>
+    </div>
+    <div class="formstyle">
+        <form name="myForm" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <label for="name">Email :</label>
+            <input type="text" name="email"><br><br>
+            <label for="name">Password :</label>
+            <input type="password" name="password"><br><br>
+            <br><br>
+            <button id="sub" type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+<!--green 439775-->
